@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>practice1</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yTg77tHuU21ZjNSUki3hvLWiqr-NwdEiXGdaCABFrSUP48BqxtHk7mrbl01RamioRNpk6qmnSskJMgV7yy2TTWb_Z1RHk4m44irPxWsY2g3ve8R-48xoGh47--b2d09fZAgj36nchbvNT-MoGXBgFjbFDdWLl7CuG_iCOo1bjxXwtpfV6makCtX5BpoqKkANqmaZZFw9RoNMPLpio-jDJ2q4fd7xh4Vs-6GVevlzDt0" charset="UTF-8"></script><script>
+		var tasks = [];
+		function add_task() {
+			task = prompt('Что вам нужно сделать?');
+			tasks.push(task);
+		}
+		function showTask1(){
+			alert(tasks);
+		}
+
+
+		var timer = setInterval('sendMessage()', 10000);
+		function sendMessage() {
+			var tasks_number = tasks.length;
+			if (tasks_number == 0) {
+				alert('Вы ничего не забыли?');
+			}
+			else {
+					alert('У вас осталось '+ tasks_number + ' задач(-а/-и)!');
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Трекер задач</h1>
+	<p><input value="Добавить задачу" onclick="add_task()" type="button"></p>
+	<p><input value="Показать задачи списком" onclick="showTask1()" type="button"></p>
+</body>
+</html>

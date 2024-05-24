@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>practice1</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=u6rW0LdTSV6cEOuAo6IcfRiQ7bjMdGb8hYwfqu3EZXDyXLM1Tw4_q1sxqr7eRQQDiWm3Gzpj45j87j8E2nh9ABQlmchaBjAN8HubjNiJ2TqqvDHDFaoPekZxQLCYdfaiA9n55AW00q9C9vV_KVs9KB7XDR7yAD5uArvtvmxYUkR6jk2fuYqJpcWYG102OXDgWv4tACkJT6yocYVAoCOYQYDTevMzEuB1p5MzhjlK1ZE" charset="UTF-8"></script><script>
+		var tasks = [];
+		function add_task() {
+			task = prompt('Что вам нужно сделать?');
+			tasks.push(task);
+		}
+		function showTask1(){
+			alert(tasks);
+		}
+
+	</script>
+</head>
+<body>
+	<h1>Трекер задач</h1>
+	<p><input value="Добавить задачу" onclick="add_task()" type="button"></p>
+	<p><input value="Показать задачи одним списком" onclick="showTask1()" type="button"></p>
+	<p><input value="Показать задачи поочерёдно" onclick="showTask2()" type="button"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function message() {
+	console.log('Привет, Мир!');
+}
+setTimeout(message, timeout:5000);
+console.log('Сначала отобразится это сообщение!');
+

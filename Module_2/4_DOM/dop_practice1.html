@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>practice1</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=C2vyVhTjpG5cMx4JJQZZdZSMeHmWeVuRUk45ChsRJcn_wV7FbstPiGAJUEUrH7OaKP6KIWMXwP5zxbbhxpVgI0pRpc2Me4M2_Uia6FinD7_mrazSCczQ-arffi86OJp8QL0Pgi00jMWIVm37_3yWuWcOS3D18y4y-b1FpnK6BCa7mdPieDEIgAvXJmGM8SC0JYOJ3rw0aytW3GrlhfAbOIWmBAl4EoLHCJc4AyM1lN0" charset="UTF-8"></script><script>
+		var tasks = [];
+
+		function add_task() {
+			task = prompt('Что вам нужно сделать?');
+			tasks.push(task);
+		}
+
+		function showTask1(){
+			alert(tasks);
+		}
+		function showTask2(){
+			for(var i = 0; i < tasks.length; i++){
+			alert(tasks[i]);
+		  }
+		}
+
+    function delTask(){
+      tasks.shift()
+    }
+	</script>
+</head>
+<body>
+	<h1>Трекер задач</h1>
+	<p><input value="Добавить задачу" onclick="add_task()" type="button"></p>
+	<p><input value="Показать задачи одним списком" onclick="showTask1()" type="button"></p>
+	<p><input value="Показать задачи поочерёдно" onclick="showTask2()" type="button"></p>
+  <p><input value="Удалить" onclick="delTask()" type="button"></p>
+  <h3>Почему получилось 22?</h3>
+  <p><img src="vk.png" width="30%" height="30%" onmouseover="alert('Потому что произошла конкатенация строк. Значит, хотя бы одна из двоек была строкой, поэтому вторая тоже стала строкой. Это особенность бинарного «+»!');"></p>
+</body>
+</html>
