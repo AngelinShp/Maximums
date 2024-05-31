@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>practice2</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=u6rW0LdTSV6cEOuAo6IcfRiQ7bjMdGb8hYwfqu3EZXDyXLM1Tw4_q1sxqr7eRQQDiWm3Gzpj45j87j8E2nh9ABQlmchaBjAN8HubjNiJ2TqqvDHDFaoPekZxQLCYdfaiA9n55AW00q9C9vV_KVs9KB7XDR7yAD5uArvtvmxYUkR6jk2fuYqJpcWYG102OXDgWv4tACkJT6yocYVAoCOYQYDTevMzEuB1p5MzhjlK1ZE" charset="UTF-8"></script><script>
+
+		function add_task() {
+			var tasks = document.getElementById('current'); //взяли список задач со страницы
+			var new_task = document.createElement('li') // <li> </li>
+			task = prompt('Что вам нужно сделать?'); //Купить молоко
+			new_task.innerHTML = task // <li> Купить молоко </li>
+			tasks.appendChild(new_task)
+
+		}
+		function delete_task() {
+			var tasks = document.getElementById('current'); //взяли список задач со страницы
+			var del_tasks = document.getElementById('done'); //взяли список завершённых задач со страницы
+			del_number = prompt('Задачу под каким номером вы сделали?'); //например, 2
+			del_number = del_number - 1; //находим индекс элемента для удаления -> 1
+			var clone = tasks.childNodes[del_number].cloneNode(true);
+			tasks.removeChild(tasks.childNodes[del_number]);
+			del_tasks.appendChild(clone)
+
+
+
+
+
+			<!--tasks[1] //2-ой элемент-->
+			<!--1. купить [0]-->
+			<!--2. продать [1]-->
+
+
+	}
+
+
+
+
+	</script>
+</head>
+<body>
+	<h1>Трекер задач</h1>
+	<p><input value="Добавить задачу" onclick="add_task()" type="button"></p>
+	<p><input value="Удалить задачу" onclick="delete_task()" type="button"></p>
+	<h2>Текущие задачи</h2>
+	<ol id='current' ></ol>
+	<h2>Завершённые задачи</h2>
+    <ol id="done" > </ol>
+
+</body>
+</html>
+
