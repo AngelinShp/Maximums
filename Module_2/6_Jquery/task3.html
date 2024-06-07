@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<link rel='stylesheet' href='jQuery.css'>
+	<script type="text/javascript" src="./Практика 1/jquery-3.6.1.min.js"></script>
+	</head>
+	<body>
+		<h1>Write less, do more!</h1>
+		<h2>Write less, do more!</h2>
+		<h3>Write less, do more!</h3>
+		<h4>Write less, do more!</h4>
+		<h5>Write less, do more!</h5>
+	</body>
+	<script>
+		function obrabotchick() {
+			$('h3').css("fontSize","27px");
+		}
+		$('h1').click(obrabotchick);
+
+		$('h2').css("textDecoration","underline");
+		$('h5').css("textTransform","uppercase");
+		$('h4').css("textAlign","center");
+	</script>
+</html>

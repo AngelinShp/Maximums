@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>practice2-1</title>
+		<link rel="stylesheet" href="practice2-1.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.6.3.js"
+		  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		  crossorigin="anonymous">
+		</script>
+	</head>
+	<body>
+		<h1 class="article-name">jQuery</h1>
+		    <div class="article-body">
+				<img class="article-img" src="logo.png">
+		        <div class="article-text">
+							jQuery — библиотека JavaScript, содержащая в себе готовые функции языка JavaScript,
+							все операции jQuery выполняются из кода JavaScript.
+							Библиотека jQuery производит манипуляции с html-элементами, управляя их поведением
+							и используя DOM для изменения структуры веб-страницы.
+							При этом исходные файлы HTML и CSS не меняются,
+							изменения вносятся лишь в отображение страницы для пользователя.
+							Для выбора элементов используются селекторы CSS.
+							Выбор осуществляется с помощью функции $().
+							При вызове функция $() возвращает новый экземпляр объекта JQuery,
+							который оборачивает ноль или более элементов DOM
+							и позволяет взаимодействовать с ними различными способами.
+						</div>
+		    </div>
+	</body>
+	<script>
+		$('.article-name').click(function () {
+		  $('.article-body').slideToggle('slow');
+		});
+	</script>
+</html>
