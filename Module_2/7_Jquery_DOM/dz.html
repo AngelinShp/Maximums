@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Пример ссылки</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+  <a href="#" title="Ссылка на сайт школы MAXIMUM Education">Посетить сайт школы MAXIMUM Education</a>
+
+  <script>
+      $('a').click(function () {
+      $('a').removeAttr('title');
+      $('a').attr('href', 'https://maximumtest.ru/');
+ㅤㅤㅤ$('a').html('Посетить сайт школы MAXIMUM Education');
+});
+  </script>
+</body>
+</html>
